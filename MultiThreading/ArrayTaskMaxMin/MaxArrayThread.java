@@ -17,7 +17,7 @@ public class MaxArrayThread implements Runnable {
     public void run() {
         //for each
         max = arr[0];
-        for (int i : arr) {
+        for (int i = 0; i <= arr.length-1;i++) {
             if (max < arr[i]) {
                 max = arr[i];
             }

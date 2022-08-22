@@ -16,7 +16,7 @@ public class MinArrayThread implements Runnable {
     public void run() {
 
         min = arr[0];
-        for (int i : arr) {
+        for (int i = 0; i <= arr.length-1;i++) {
             if (min > arr[i]) {
                 min = arr[i];
             }
